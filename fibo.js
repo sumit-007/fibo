@@ -1,17 +1,21 @@
-function fun(m,n)
+function fibo(m,n)
 {
-console.log("1");
-var c;var a=0;var b=1;
-for (c=m;c<=n;)
+var ar=new Array();
+var i=0;
+ar[i++]=0;
+ar[i++]=1;
+while(1)
 {
-	c=a+b;
-	if(c<=n)
-	{console.log(c);
-	a=b;
-	b=c;}
+	ar[i]=ar[i-1]+ar[i-2];
+	i++;
+	if(ar[i-1]+ar[i-2]>30)
+	break;
 }
+return ar;
 }
 
-fun(1,30);
+var c=new Array(fibo(1,30));
+console.log(c);
+module.exports=fibo
 
 
