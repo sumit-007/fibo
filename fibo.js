@@ -16,6 +16,7 @@ return ar;
 
 var c=new Array(fibo(1,30));
 console.log(c);
+console.log("\n");
 module.exports=fibo
 
 
